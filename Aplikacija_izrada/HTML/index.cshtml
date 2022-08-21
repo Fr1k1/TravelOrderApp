@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Travel Order Management</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write(decodeURIComponent('%3Cscript src="js/jquery.min.js"%3E%3C/script%3E'))</script>
+    <script type='text/javascript' src='../plugins/moment/2.27.0/moment.js'></script>
+    <script type='text/javascript' src='@string.Format("../plugins/moment/2.27.0/locale/{0}.min.js", "hr")'></script>
+
+    @{
+        string sessionLanguage = Request.QueryString["sessionLanguage"];
+    }
+    @{ string devExtremeVersion = System.Configuration.ConfigurationManager.AppSettings["DevXtremeVersion"]; }
+    <link rel="stylesheet" type="text/css" href='@string.Format("../plugins/{0}/lib/css/dx.generic.TravelApp.css", devExtremeVersion, (String.IsNullOrWhiteSpace(Request.QueryString["portalDesignName"]) ? "fleet" : Request.QueryString["portalDesignName"]) )'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <script type='text/javascript' src='@string.Format("../plugins/{0}/Lib/js/dx.all.js", devExtremeVersion)'></script>
+    <script type='text/javascript' src='@string.Format("../plugins/{0}/lib/js/localization/dx.messages.{1}.js", devExtremeVersion, sessionLanguage)'></script>
+
+
+    <link rel="icon" href="../Slike/favicon.png" />
+
+    <script src="https://kit.fontawesome.com/fd13aa364a.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css" />
+
+</head>
+<body class="dx-viewport" id="main" onload="init()">
+
+    <div class="toolbar">
+
+
+    </div>
+
+    <div id="drawer">
+
+
+        <div id="content" class="dx-theme-background-color">
+
+            <div id="popup"></div>
+        </div>
+
+
+        <div id="APIheader" class="dx-theme-background-color mainDiv container-fluid">
+
+            <p>API za putne račune</p>
+
+            <p>Ovaj API služi za kreiranje i administraciju putnih računa i svih pripadajućih komponenti putnih računa</p>
+
+            <p>Poveznica za pristup API-ju nalazi se <a link href="https://swagger.mobilisis.hr/travelOrder/">ovdje</a></p>
+
+            <div id="default-contained" class="btn-api-create container-fluid gumb_kreiraj_api">KREIRAJ API</div>
+        </div>
+
+        <div id="APImain" class="dx-theme-background-color">
+            <div id="APImainContent"> </div>
+        </div>
+
+
+
+
+
+    </div>
+
+    <div id='mobLoadPanel'></div>
+    <script>
+        var webAPIUrl = "https://" + '@System.Configuration.ConfigurationManager.AppSettings["FleetWebApiUrl"]';
+        var userData = {};
+        var AppConfig = {};
+        AppConfig.TravelOrderAPIUrl = "https://" + '@System.Configuration.ConfigurationManager.AppSettings["TravelOrderAPIUrl"]';
+    </script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../JS/Common.js"></script>
+
+    <script src="~/JS/APImethods.js"></script>
+    <script src="~/JS/CostsMethods.js"></script>
+    <script src="../JS/DatePicker.js"></script>
+    <script src="../JS/Dashboards.js"></script>
+    <script src="../JS/GetMethodsForGrid.js"></script>
+    <script src="~/JS/DataFormatting.js"></script>
+    <script src="~/JS/Navigation.js"></script>
+    <script src="~/JS/Drawer.js"></script>
+    <script src="~/JS/PopupForms.js"></script>
+    <script src="~/JS/Toolbar.js"></script>
+    <script src="~/JS/Plans.js"></script>
+
+
+
+    <script src="../JS/index.js"></script>
+
+</body>
+</html>
+

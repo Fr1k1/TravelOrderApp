@@ -1,0 +1,1344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F88531AF-75A7-4E56-9C68-380302A88285}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Aplikacija_izrada</RootNamespace>
+    <AssemblyName>Aplikacija_izrada</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=2.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.7\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.3\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.7\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.7\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.5.0.2\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="HTML\changePassword.cshtml" />
+    <None Include="HTML\useraccessdata.cshtml" />
+    <Content Include="JS\APImethods.js" />
+    <Content Include="JS\ChangePassword.js" />
+    <Content Include="JS\Common.js" />
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <None Include="HTML\ForgottenPassword.cshtml" />
+    <Content Include="JS\CostsMethods.js" />
+    <Content Include="JS\Dashboards.js" />
+    <Content Include="JS\DataFormatting.js" />
+    <Content Include="JS\DatePicker.js" />
+    <Content Include="JS\Drawer.js" />
+    <Content Include="JS\Forgotten_password.js" />
+    <Content Include="JS\GetMethodsForGrid.js" />
+    <Content Include="JS\Login_forma.js" />
+    <Content Include="Global.asax" />
+    <Content Include="Content\Site.css" />
+    <None Include="HTML\index.cshtml" />
+    <Content Include="JS\index.js" />
+    <None Include="HTML\Login.cshtml" />
+    <Content Include="CSS\LoginForm.css" />
+    <Content Include="JS\Navigation.js" />
+    <Content Include="JS\Plans.js" />
+    <Content Include="JS\PopupForms.js" />
+    <Content Include="JS\Toolbar.js" />
+    <Content Include="JS\userAccessData.js" />
+    <Content Include="PIC\FLAGS\1x1\ad.svg" />
+    <Content Include="PIC\FLAGS\1x1\ae.svg" />
+    <Content Include="PIC\FLAGS\1x1\af.svg" />
+    <Content Include="PIC\FLAGS\1x1\ag.svg" />
+    <Content Include="PIC\FLAGS\1x1\ai.svg" />
+    <Content Include="PIC\FLAGS\1x1\al.svg" />
+    <Content Include="PIC\FLAGS\1x1\am.svg" />
+    <Content Include="PIC\FLAGS\1x1\ao.svg" />
+    <Content Include="PIC\FLAGS\1x1\aq.svg" />
+    <Content Include="PIC\FLAGS\1x1\ar.svg" />
+    <Content Include="PIC\FLAGS\1x1\as.svg" />
+    <Content Include="PIC\FLAGS\1x1\at.svg" />
+    <Content Include="PIC\FLAGS\1x1\au.svg" />
+    <Content Include="PIC\FLAGS\1x1\aw.svg" />
+    <Content Include="PIC\FLAGS\1x1\ax.svg" />
+    <Content Include="PIC\FLAGS\1x1\az.svg" />
+    <Content Include="PIC\FLAGS\1x1\ba.svg" />
+    <Content Include="PIC\FLAGS\1x1\bb.svg" />
+    <Content Include="PIC\FLAGS\1x1\bd.svg" />
+    <Content Include="PIC\FLAGS\1x1\be.svg" />
+    <Content Include="PIC\FLAGS\1x1\bf.svg" />
+    <Content Include="PIC\FLAGS\1x1\bg.svg" />
+    <Content Include="PIC\FLAGS\1x1\bh.svg" />
+    <Content Include="PIC\FLAGS\1x1\bi.svg" />
+    <Content Include="PIC\FLAGS\1x1\bj.svg" />
+    <Content Include="PIC\FLAGS\1x1\bl.svg" />
+    <Content Include="PIC\FLAGS\1x1\bm.svg" />
+    <Content Include="PIC\FLAGS\1x1\bn.svg" />
+    <Content Include="PIC\FLAGS\1x1\bo.svg" />
+    <Content Include="PIC\FLAGS\1x1\bq.svg" />
+    <Content Include="PIC\FLAGS\1x1\br.svg" />
+    <Content Include="PIC\FLAGS\1x1\bs.svg" />
+    <Content Include="PIC\FLAGS\1x1\bt.svg" />
+    <Content Include="PIC\FLAGS\1x1\bv.svg" />
+    <Content Include="PIC\FLAGS\1x1\bw.svg" />
+    <Content Include="PIC\FLAGS\1x1\by.svg" />
+    <Content Include="PIC\FLAGS\1x1\bz.svg" />
+    <Content Include="PIC\FLAGS\1x1\ca.svg" />
+    <Content Include="PIC\FLAGS\1x1\cc.svg" />
+    <Content Include="PIC\FLAGS\1x1\cd.svg" />
+    <Content Include="PIC\FLAGS\1x1\cf.svg" />
+    <Content Include="PIC\FLAGS\1x1\cg.svg" />
+    <Content Include="PIC\FLAGS\1x1\ch.svg" />
+    <Content Include="PIC\FLAGS\1x1\ci.svg" />
+    <Content Include="PIC\FLAGS\1x1\ck.svg" />
+    <Content Include="PIC\FLAGS\1x1\cl.svg" />
+    <Content Include="PIC\FLAGS\1x1\cm.svg" />
+    <Content Include="PIC\FLAGS\1x1\cn.svg" />
+    <Content Include="PIC\FLAGS\1x1\co.svg" />
+    <Content Include="PIC\FLAGS\1x1\cr.svg" />
+    <Content Include="PIC\FLAGS\1x1\cu.svg" />
+    <Content Include="PIC\FLAGS\1x1\cv.svg" />
+    <Content Include="PIC\FLAGS\1x1\cw.svg" />
+    <Content Include="PIC\FLAGS\1x1\cx.svg" />
+    <Content Include="PIC\FLAGS\1x1\cy.svg" />
+    <Content Include="PIC\FLAGS\1x1\cz.svg" />
+    <Content Include="PIC\FLAGS\1x1\de.svg" />
+    <Content Include="PIC\FLAGS\1x1\dj.svg" />
+    <Content Include="PIC\FLAGS\1x1\dk.svg" />
+    <Content Include="PIC\FLAGS\1x1\dm.svg" />
+    <Content Include="PIC\FLAGS\1x1\do.svg" />
+    <Content Include="PIC\FLAGS\1x1\dz.svg" />
+    <Content Include="PIC\FLAGS\1x1\ec.svg" />
+    <Content Include="PIC\FLAGS\1x1\ee.svg" />
+    <Content Include="PIC\FLAGS\1x1\eg.svg" />
+    <Content Include="PIC\FLAGS\1x1\eh.svg" />
+    <Content Include="PIC\FLAGS\1x1\er.svg" />
+    <Content Include="PIC\FLAGS\1x1\es-ct.svg" />
+    <Content Include="PIC\FLAGS\1x1\es-ga.svg" />
+    <Content Include="PIC\FLAGS\1x1\es.svg" />
+    <Content Include="PIC\FLAGS\1x1\et.svg" />
+    <Content Include="PIC\FLAGS\1x1\eu.svg" />
+    <Content Include="PIC\FLAGS\1x1\fi.svg" />
+    <Content Include="PIC\FLAGS\1x1\fj.svg" />
+    <Content Include="PIC\FLAGS\1x1\fk.svg" />
+    <Content Include="PIC\FLAGS\1x1\fm.svg" />
+    <Content Include="PIC\FLAGS\1x1\fo.svg" />
+    <Content Include="PIC\FLAGS\1x1\fr.svg" />
+    <Content Include="PIC\FLAGS\1x1\ga.svg" />
+    <Content Include="PIC\FLAGS\1x1\gb-eng.svg" />
+    <Content Include="PIC\FLAGS\1x1\gb-nir.svg" />
+    <Content Include="PIC\FLAGS\1x1\gb-sct.svg" />
+    <Content Include="PIC\FLAGS\1x1\gb-wls.svg" />
+    <Content Include="PIC\FLAGS\1x1\gb.svg" />
+    <Content Include="PIC\FLAGS\1x1\gd.svg" />
+    <Content Include="PIC\FLAGS\1x1\ge.svg" />
+    <Content Include="PIC\FLAGS\1x1\gf.svg" />
+    <Content Include="PIC\FLAGS\1x1\gg.svg" />
+    <Content Include="PIC\FLAGS\1x1\gh.svg" />
+    <Content Include="PIC\FLAGS\1x1\gi.svg" />
+    <Content Include="PIC\FLAGS\1x1\gl.svg" />
+    <Content Include="PIC\FLAGS\1x1\gm.svg" />
+    <Content Include="PIC\FLAGS\1x1\gn.svg" />
+    <Content Include="PIC\FLAGS\1x1\gp.svg" />
+    <Content Include="PIC\FLAGS\1x1\gq.svg" />
+    <Content Include="PIC\FLAGS\1x1\gr.svg" />
+    <Content Include="PIC\FLAGS\1x1\gs.svg" />
+    <Content Include="PIC\FLAGS\1x1\gt.svg" />
+    <Content Include="PIC\FLAGS\1x1\gu.svg" />
+    <Content Include="PIC\FLAGS\1x1\gw.svg" />
+    <Content Include="PIC\FLAGS\1x1\gy.svg" />
+    <Content Include="PIC\FLAGS\1x1\hk.svg" />
+    <Content Include="PIC\FLAGS\1x1\hm.svg" />
+    <Content Include="PIC\FLAGS\1x1\hn.svg" />
+    <Content Include="PIC\FLAGS\1x1\hr.svg" />
+    <Content Include="PIC\FLAGS\1x1\ht.svg" />
+    <Content Include="PIC\FLAGS\1x1\hu.svg" />
+    <Content Include="PIC\FLAGS\1x1\id.svg" />
+    <Content Include="PIC\FLAGS\1x1\ie.svg" />
+    <Content Include="PIC\FLAGS\1x1\il.svg" />
+    <Content Include="PIC\FLAGS\1x1\im.svg" />
+    <Content Include="PIC\FLAGS\1x1\in.svg" />
+    <Content Include="PIC\FLAGS\1x1\io.svg" />
+    <Content Include="PIC\FLAGS\1x1\iq.svg" />
+    <Content Include="PIC\FLAGS\1x1\ir.svg" />
+    <Content Include="PIC\FLAGS\1x1\is.svg" />
+    <Content Include="PIC\FLAGS\1x1\it.svg" />
+    <Content Include="PIC\FLAGS\1x1\je.svg" />
+    <Content Include="PIC\FLAGS\1x1\jm.svg" />
+    <Content Include="PIC\FLAGS\1x1\jo.svg" />
+    <Content Include="PIC\FLAGS\1x1\jp.svg" />
+    <Content Include="PIC\FLAGS\1x1\ke.svg" />
+    <Content Include="PIC\FLAGS\1x1\kg.svg" />
+    <Content Include="PIC\FLAGS\1x1\kh.svg" />
+    <Content Include="PIC\FLAGS\1x1\ki.svg" />
+    <Content Include="PIC\FLAGS\1x1\km.svg" />
+    <Content Include="PIC\FLAGS\1x1\kn.svg" />
+    <Content Include="PIC\FLAGS\1x1\kp.svg" />
+    <Content Include="PIC\FLAGS\1x1\kr.svg" />
+    <Content Include="PIC\FLAGS\1x1\kw.svg" />
+    <Content Include="PIC\FLAGS\1x1\ky.svg" />
+    <Content Include="PIC\FLAGS\1x1\kz.svg" />
+    <Content Include="PIC\FLAGS\1x1\la.svg" />
+    <Content Include="PIC\FLAGS\1x1\lb.svg" />
+    <Content Include="PIC\FLAGS\1x1\lc.svg" />
+    <Content Include="PIC\FLAGS\1x1\li.svg" />
+    <Content Include="PIC\FLAGS\1x1\lk.svg" />
+    <Content Include="PIC\FLAGS\1x1\lr.svg" />
+    <Content Include="PIC\FLAGS\1x1\ls.svg" />
+    <Content Include="PIC\FLAGS\1x1\lt.svg" />
+    <Content Include="PIC\FLAGS\1x1\lu.svg" />
+    <Content Include="PIC\FLAGS\1x1\lv.svg" />
+    <Content Include="PIC\FLAGS\1x1\ly.svg" />
+    <Content Include="PIC\FLAGS\1x1\ma.svg" />
+    <Content Include="PIC\FLAGS\1x1\mc.svg" />
+    <Content Include="PIC\FLAGS\1x1\md.svg" />
+    <Content Include="PIC\FLAGS\1x1\me.svg" />
+    <Content Include="PIC\FLAGS\1x1\mf.svg" />
+    <Content Include="PIC\FLAGS\1x1\mg.svg" />
+    <Content Include="PIC\FLAGS\1x1\mh.svg" />
+    <Content Include="PIC\FLAGS\1x1\mk.svg" />
+    <Content Include="PIC\FLAGS\1x1\ml.svg" />
+    <Content Include="PIC\FLAGS\1x1\mm.svg" />
+    <Content Include="PIC\FLAGS\1x1\mn.svg" />
+    <Content Include="PIC\FLAGS\1x1\mo.svg" />
+    <Content Include="PIC\FLAGS\1x1\mp.svg" />
+    <Content Include="PIC\FLAGS\1x1\mq.svg" />
+    <Content Include="PIC\FLAGS\1x1\mr.svg" />
+    <Content Include="PIC\FLAGS\1x1\ms.svg" />
+    <Content Include="PIC\FLAGS\1x1\mt.svg" />
+    <Content Include="PIC\FLAGS\1x1\mu.svg" />
+    <Content Include="PIC\FLAGS\1x1\mv.svg" />
+    <Content Include="PIC\FLAGS\1x1\mw.svg" />
+    <Content Include="PIC\FLAGS\1x1\mx.svg" />
+    <Content Include="PIC\FLAGS\1x1\my.svg" />
+    <Content Include="PIC\FLAGS\1x1\mz.svg" />
+    <Content Include="PIC\FLAGS\1x1\na.svg" />
+    <Content Include="PIC\FLAGS\1x1\nc.svg" />
+    <Content Include="PIC\FLAGS\1x1\ne.svg" />
+    <Content Include="PIC\FLAGS\1x1\nf.svg" />
+    <Content Include="PIC\FLAGS\1x1\ng.svg" />
+    <Content Include="PIC\FLAGS\1x1\ni.svg" />
+    <Content Include="PIC\FLAGS\1x1\nl.svg" />
+    <Content Include="PIC\FLAGS\1x1\no.svg" />
+    <Content Include="PIC\FLAGS\1x1\np.svg" />
+    <Content Include="PIC\FLAGS\1x1\nr.svg" />
+    <Content Include="PIC\FLAGS\1x1\nu.svg" />
+    <Content Include="PIC\FLAGS\1x1\nz.svg" />
+    <Content Include="PIC\FLAGS\1x1\om.svg" />
+    <Content Include="PIC\FLAGS\1x1\pa.svg" />
+    <Content Include="PIC\FLAGS\1x1\pe.svg" />
+    <Content Include="PIC\FLAGS\1x1\pf.svg" />
+    <Content Include="PIC\FLAGS\1x1\pg.svg" />
+    <Content Include="PIC\FLAGS\1x1\ph.svg" />
+    <Content Include="PIC\FLAGS\1x1\pk.svg" />
+    <Content Include="PIC\FLAGS\1x1\pl.svg" />
+    <Content Include="PIC\FLAGS\1x1\pm.svg" />
+    <Content Include="PIC\FLAGS\1x1\pn.svg" />
+    <Content Include="PIC\FLAGS\1x1\pr.svg" />
+    <Content Include="PIC\FLAGS\1x1\ps.svg" />
+    <Content Include="PIC\FLAGS\1x1\pt.svg" />
+    <Content Include="PIC\FLAGS\1x1\pw.svg" />
+    <Content Include="PIC\FLAGS\1x1\py.svg" />
+    <Content Include="PIC\FLAGS\1x1\qa.svg" />
+    <Content Include="PIC\FLAGS\1x1\re.svg" />
+    <Content Include="PIC\FLAGS\1x1\ro.svg" />
+    <Content Include="PIC\FLAGS\1x1\rs.svg" />
+    <Content Include="PIC\FLAGS\1x1\ru.svg" />
+    <Content Include="PIC\FLAGS\1x1\rw.svg" />
+    <Content Include="PIC\FLAGS\1x1\sa.svg" />
+    <Content Include="PIC\FLAGS\1x1\sb.svg" />
+    <Content Include="PIC\FLAGS\1x1\sc.svg" />
+    <Content Include="PIC\FLAGS\1x1\sd.svg" />
+    <Content Include="PIC\FLAGS\1x1\se.svg" />
+    <Content Include="PIC\FLAGS\1x1\sg.svg" />
+    <Content Include="PIC\FLAGS\1x1\sh.svg" />
+    <Content Include="PIC\FLAGS\1x1\si.svg" />
+    <Content Include="PIC\FLAGS\1x1\sj.svg" />
+    <Content Include="PIC\FLAGS\1x1\sk.svg" />
+    <Content Include="PIC\FLAGS\1x1\sl.svg" />
+    <Content Include="PIC\FLAGS\1x1\sm.svg" />
+    <Content Include="PIC\FLAGS\1x1\sn.svg" />
+    <Content Include="PIC\FLAGS\1x1\so.svg" />
+    <Content Include="PIC\FLAGS\1x1\sr.svg" />
+    <Content Include="PIC\FLAGS\1x1\ss.svg" />
+    <Content Include="PIC\FLAGS\1x1\st.svg" />
+    <Content Include="PIC\FLAGS\1x1\sv.svg" />
+    <Content Include="PIC\FLAGS\1x1\sx.svg" />
+    <Content Include="PIC\FLAGS\1x1\sy.svg" />
+    <Content Include="PIC\FLAGS\1x1\sz.svg" />
+    <Content Include="PIC\FLAGS\1x1\tc.svg" />
+    <Content Include="PIC\FLAGS\1x1\td.svg" />
+    <Content Include="PIC\FLAGS\1x1\tf.svg" />
+    <Content Include="PIC\FLAGS\1x1\tg.svg" />
+    <Content Include="PIC\FLAGS\1x1\th.svg" />
+    <Content Include="PIC\FLAGS\1x1\tj.svg" />
+    <Content Include="PIC\FLAGS\1x1\tk.svg" />
+    <Content Include="PIC\FLAGS\1x1\tl.svg" />
+    <Content Include="PIC\FLAGS\1x1\tm.svg" />
+    <Content Include="PIC\FLAGS\1x1\tn.svg" />
+    <Content Include="PIC\FLAGS\1x1\to.svg" />
+    <Content Include="PIC\FLAGS\1x1\tr.svg" />
+    <Content Include="PIC\FLAGS\1x1\tt.svg" />
+    <Content Include="PIC\FLAGS\1x1\tv.svg" />
+    <Content Include="PIC\FLAGS\1x1\tw.svg" />
+    <Content Include="PIC\FLAGS\1x1\tz.svg" />
+    <Content Include="PIC\FLAGS\1x1\ua.svg" />
+    <Content Include="PIC\FLAGS\1x1\ug.svg" />
+    <Content Include="PIC\FLAGS\1x1\um.svg" />
+    <Content Include="PIC\FLAGS\1x1\un.svg" />
+    <Content Include="PIC\FLAGS\1x1\us.svg" />
+    <Content Include="PIC\FLAGS\1x1\uy.svg" />
+    <Content Include="PIC\FLAGS\1x1\uz.svg" />
+    <Content Include="PIC\FLAGS\1x1\va.svg" />
+    <Content Include="PIC\FLAGS\1x1\vc.svg" />
+    <Content Include="PIC\FLAGS\1x1\ve.svg" />
+    <Content Include="PIC\FLAGS\1x1\vg.svg" />
+    <Content Include="PIC\FLAGS\1x1\vi.svg" />
+    <Content Include="PIC\FLAGS\1x1\vn.svg" />
+    <Content Include="PIC\FLAGS\1x1\vu.svg" />
+    <Content Include="PIC\FLAGS\1x1\wf.svg" />
+    <Content Include="PIC\FLAGS\1x1\ws.svg" />
+    <Content Include="PIC\FLAGS\1x1\xk.svg" />
+    <Content Include="PIC\FLAGS\1x1\ye.svg" />
+    <Content Include="PIC\FLAGS\1x1\yt.svg" />
+    <Content Include="PIC\FLAGS\1x1\za.svg" />
+    <Content Include="PIC\FLAGS\1x1\zm.svg" />
+    <Content Include="PIC\FLAGS\1x1\zw.svg" />
+    <Content Include="PIC\FLAGS\4x3\ad.svg" />
+    <Content Include="PIC\FLAGS\4x3\ae.svg" />
+    <Content Include="PIC\FLAGS\4x3\af.svg" />
+    <Content Include="PIC\FLAGS\4x3\ag.svg" />
+    <Content Include="PIC\FLAGS\4x3\ai.svg" />
+    <Content Include="PIC\FLAGS\4x3\al.svg" />
+    <Content Include="PIC\FLAGS\4x3\am.svg" />
+    <Content Include="PIC\FLAGS\4x3\ao.svg" />
+    <Content Include="PIC\FLAGS\4x3\aq.svg" />
+    <Content Include="PIC\FLAGS\4x3\ar.svg" />
+    <Content Include="PIC\FLAGS\4x3\as.svg" />
+    <Content Include="PIC\FLAGS\4x3\at.svg" />
+    <Content Include="PIC\FLAGS\4x3\au.svg" />
+    <Content Include="PIC\FLAGS\4x3\aw.svg" />
+    <Content Include="PIC\FLAGS\4x3\ax.svg" />
+    <Content Include="PIC\FLAGS\4x3\az.svg" />
+    <Content Include="PIC\FLAGS\4x3\ba.svg" />
+    <Content Include="PIC\FLAGS\4x3\bb.svg" />
+    <Content Include="PIC\FLAGS\4x3\bd.svg" />
+    <Content Include="PIC\FLAGS\4x3\be.svg" />
+    <Content Include="PIC\FLAGS\4x3\bf.svg" />
+    <Content Include="PIC\FLAGS\4x3\bg.svg" />
+    <Content Include="PIC\FLAGS\4x3\bh.svg" />
+    <Content Include="PIC\FLAGS\4x3\bi.svg" />
+    <Content Include="PIC\FLAGS\4x3\bj.svg" />
+    <Content Include="PIC\FLAGS\4x3\bl.svg" />
+    <Content Include="PIC\FLAGS\4x3\bm.svg" />
+    <Content Include="PIC\FLAGS\4x3\bn.svg" />
+    <Content Include="PIC\FLAGS\4x3\bo.svg" />
+    <Content Include="PIC\FLAGS\4x3\bq.svg" />
+    <Content Include="PIC\FLAGS\4x3\br.svg" />
+    <Content Include="PIC\FLAGS\4x3\bs.svg" />
+    <Content Include="PIC\FLAGS\4x3\bt.svg" />
+    <Content Include="PIC\FLAGS\4x3\bv.svg" />
+    <Content Include="PIC\FLAGS\4x3\bw.svg" />
+    <Content Include="PIC\FLAGS\4x3\by.svg" />
+    <Content Include="PIC\FLAGS\4x3\bz.svg" />
+    <Content Include="PIC\FLAGS\4x3\ca.svg" />
+    <Content Include="PIC\FLAGS\4x3\cc.svg" />
+    <Content Include="PIC\FLAGS\4x3\cd.svg" />
+    <Content Include="PIC\FLAGS\4x3\cf.svg" />
+    <Content Include="PIC\FLAGS\4x3\cg.svg" />
+    <Content Include="PIC\FLAGS\4x3\ch.svg" />
+    <Content Include="PIC\FLAGS\4x3\ci.svg" />
+    <Content Include="PIC\FLAGS\4x3\ck.svg" />
+    <Content Include="PIC\FLAGS\4x3\cl.svg" />
+    <Content Include="PIC\FLAGS\4x3\cm.svg" />
+    <Content Include="PIC\FLAGS\4x3\cn.svg" />
+    <Content Include="PIC\FLAGS\4x3\co.svg" />
+    <Content Include="PIC\FLAGS\4x3\cr.svg" />
+    <Content Include="PIC\FLAGS\4x3\cu.svg" />
+    <Content Include="PIC\FLAGS\4x3\cv.svg" />
+    <Content Include="PIC\FLAGS\4x3\cw.svg" />
+    <Content Include="PIC\FLAGS\4x3\cx.svg" />
+    <Content Include="PIC\FLAGS\4x3\cy.svg" />
+    <Content Include="PIC\FLAGS\4x3\cz.svg" />
+    <Content Include="PIC\FLAGS\4x3\de.svg" />
+    <Content Include="PIC\FLAGS\4x3\dj.svg" />
+    <Content Include="PIC\FLAGS\4x3\dk.svg" />
+    <Content Include="PIC\FLAGS\4x3\dm.svg" />
+    <Content Include="PIC\FLAGS\4x3\do.svg" />
+    <Content Include="PIC\FLAGS\4x3\dz.svg" />
+    <Content Include="PIC\FLAGS\4x3\ec.svg" />
+    <Content Include="PIC\FLAGS\4x3\ee.svg" />
+    <Content Include="PIC\FLAGS\4x3\eg.svg" />
+    <Content Include="PIC\FLAGS\4x3\eh.svg" />
+    <Content Include="PIC\FLAGS\4x3\er.svg" />
+    <Content Include="PIC\FLAGS\4x3\es-ct.svg" />
+    <Content Include="PIC\FLAGS\4x3\es-ga.svg" />
+    <Content Include="PIC\FLAGS\4x3\es.svg" />
+    <Content Include="PIC\FLAGS\4x3\et.svg" />
+    <Content Include="PIC\FLAGS\4x3\eu.svg" />
+    <Content Include="PIC\FLAGS\4x3\fi.svg" />
+    <Content Include="PIC\FLAGS\4x3\fj.svg" />
+    <Content Include="PIC\FLAGS\4x3\fk.svg" />
+    <Content Include="PIC\FLAGS\4x3\fm.svg" />
+    <Content Include="PIC\FLAGS\4x3\fo.svg" />
+    <Content Include="PIC\FLAGS\4x3\fr.svg" />
+    <Content Include="PIC\FLAGS\4x3\ga.svg" />
+    <Content Include="PIC\FLAGS\4x3\gb-eng.svg" />
+    <Content Include="PIC\FLAGS\4x3\gb-nir.svg" />
+    <Content Include="PIC\FLAGS\4x3\gb-sct.svg" />
+    <Content Include="PIC\FLAGS\4x3\gb-wls.svg" />
+    <Content Include="PIC\FLAGS\4x3\gb.svg" />
+    <Content Include="PIC\FLAGS\4x3\gd.svg" />
+    <Content Include="PIC\FLAGS\4x3\ge.svg" />
+    <Content Include="PIC\FLAGS\4x3\gf.svg" />
+    <Content Include="PIC\FLAGS\4x3\gg.svg" />
+    <Content Include="PIC\FLAGS\4x3\gh.svg" />
+    <Content Include="PIC\FLAGS\4x3\gi.svg" />
+    <Content Include="PIC\FLAGS\4x3\gl.svg" />
+    <Content Include="PIC\FLAGS\4x3\gm.svg" />
+    <Content Include="PIC\FLAGS\4x3\gn.svg" />
+    <Content Include="PIC\FLAGS\4x3\gp.svg" />
+    <Content Include="PIC\FLAGS\4x3\gq.svg" />
+    <Content Include="PIC\FLAGS\4x3\gr.svg" />
+    <Content Include="PIC\FLAGS\4x3\gs.svg" />
+    <Content Include="PIC\FLAGS\4x3\gt.svg" />
+    <Content Include="PIC\FLAGS\4x3\gu.svg" />
+    <Content Include="PIC\FLAGS\4x3\gw.svg" />
+    <Content Include="PIC\FLAGS\4x3\gy.svg" />
+    <Content Include="PIC\FLAGS\4x3\hk.svg" />
+    <Content Include="PIC\FLAGS\4x3\hm.svg" />
+    <Content Include="PIC\FLAGS\4x3\hn.svg" />
+    <Content Include="PIC\FLAGS\4x3\hr.svg" />
+    <Content Include="PIC\FLAGS\4x3\hr_org.svg" />
+    <Content Include="PIC\FLAGS\4x3\ht.svg" />
+    <Content Include="PIC\FLAGS\4x3\hu.svg" />
+    <Content Include="PIC\FLAGS\4x3\id.svg" />
+    <Content Include="PIC\FLAGS\4x3\ie.svg" />
+    <Content Include="PIC\FLAGS\4x3\il.svg" />
+    <Content Include="PIC\FLAGS\4x3\im.svg" />
+    <Content Include="PIC\FLAGS\4x3\in.svg" />
+    <Content Include="PIC\FLAGS\4x3\io.svg" />
+    <Content Include="PIC\FLAGS\4x3\iq.svg" />
+    <Content Include="PIC\FLAGS\4x3\ir.svg" />
+    <Content Include="PIC\FLAGS\4x3\is.svg" />
+    <Content Include="PIC\FLAGS\4x3\it.svg" />
+    <Content Include="PIC\FLAGS\4x3\je.svg" />
+    <Content Include="PIC\FLAGS\4x3\jm.svg" />
+    <Content Include="PIC\FLAGS\4x3\jo.svg" />
+    <Content Include="PIC\FLAGS\4x3\jp.svg" />
+    <Content Include="PIC\FLAGS\4x3\ke.svg" />
+    <Content Include="PIC\FLAGS\4x3\kg.svg" />
+    <Content Include="PIC\FLAGS\4x3\kh.svg" />
+    <Content Include="PIC\FLAGS\4x3\ki.svg" />
+    <Content Include="PIC\FLAGS\4x3\km.svg" />
+    <Content Include="PIC\FLAGS\4x3\kn.svg" />
+    <Content Include="PIC\FLAGS\4x3\kp.svg" />
+    <Content Include="PIC\FLAGS\4x3\kr.svg" />
+    <Content Include="PIC\FLAGS\4x3\kw.svg" />
+    <Content Include="PIC\FLAGS\4x3\ky.svg" />
+    <Content Include="PIC\FLAGS\4x3\kz.svg" />
+    <Content Include="PIC\FLAGS\4x3\la.svg" />
+    <Content Include="PIC\FLAGS\4x3\lb.svg" />
+    <Content Include="PIC\FLAGS\4x3\lc.svg" />
+    <Content Include="PIC\FLAGS\4x3\li.svg" />
+    <Content Include="PIC\FLAGS\4x3\lk.svg" />
+    <Content Include="PIC\FLAGS\4x3\lr.svg" />
+    <Content Include="PIC\FLAGS\4x3\ls.svg" />
+    <Content Include="PIC\FLAGS\4x3\lt.svg" />
+    <Content Include="PIC\FLAGS\4x3\lu.svg" />
+    <Content Include="PIC\FLAGS\4x3\lv.svg" />
+    <Content Include="PIC\FLAGS\4x3\ly.svg" />
+    <Content Include="PIC\FLAGS\4x3\ma.svg" />
+    <Content Include="PIC\FLAGS\4x3\mc.svg" />
+    <Content Include="PIC\FLAGS\4x3\md.svg" />
+    <Content Include="PIC\FLAGS\4x3\me.svg" />
+    <Content Include="PIC\FLAGS\4x3\mf.svg" />
+    <Content Include="PIC\FLAGS\4x3\mg.svg" />
+    <Content Include="PIC\FLAGS\4x3\mh.svg" />
+    <Content Include="PIC\FLAGS\4x3\mk.svg" />
+    <Content Include="PIC\FLAGS\4x3\ml.svg" />
+    <Content Include="PIC\FLAGS\4x3\mm.svg" />
+    <Content Include="PIC\FLAGS\4x3\mn.svg" />
+    <Content Include="PIC\FLAGS\4x3\mo.svg" />
+    <Content Include="PIC\FLAGS\4x3\mp.svg" />
+    <Content Include="PIC\FLAGS\4x3\mq.svg" />
+    <Content Include="PIC\FLAGS\4x3\mr.svg" />
+    <Content Include="PIC\FLAGS\4x3\ms.svg" />
+    <Content Include="PIC\FLAGS\4x3\mt.svg" />
+    <Content Include="PIC\FLAGS\4x3\mu.svg" />
+    <Content Include="PIC\FLAGS\4x3\mv.svg" />
+    <Content Include="PIC\FLAGS\4x3\mw.svg" />
+    <Content Include="PIC\FLAGS\4x3\mx.svg" />
+    <Content Include="PIC\FLAGS\4x3\my.svg" />
+    <Content Include="PIC\FLAGS\4x3\mz.svg" />
+    <Content Include="PIC\FLAGS\4x3\na.svg" />
+    <Content Include="PIC\FLAGS\4x3\nc.svg" />
+    <Content Include="PIC\FLAGS\4x3\ne.svg" />
+    <Content Include="PIC\FLAGS\4x3\nf.svg" />
+    <Content Include="PIC\FLAGS\4x3\ng.svg" />
+    <Content Include="PIC\FLAGS\4x3\ni.svg" />
+    <Content Include="PIC\FLAGS\4x3\nl.svg" />
+    <Content Include="PIC\FLAGS\4x3\no.svg" />
+    <Content Include="PIC\FLAGS\4x3\np.svg" />
+    <Content Include="PIC\FLAGS\4x3\nr.svg" />
+    <Content Include="PIC\FLAGS\4x3\nu.svg" />
+    <Content Include="PIC\FLAGS\4x3\nz.svg" />
+    <Content Include="PIC\FLAGS\4x3\om.svg" />
+    <Content Include="PIC\FLAGS\4x3\pa.svg" />
+    <Content Include="PIC\FLAGS\4x3\pe.svg" />
+    <Content Include="PIC\FLAGS\4x3\pf.svg" />
+    <Content Include="PIC\FLAGS\4x3\pg.svg" />
+    <Content Include="PIC\FLAGS\4x3\ph.svg" />
+    <Content Include="PIC\FLAGS\4x3\pk.svg" />
+    <Content Include="PIC\FLAGS\4x3\pl.svg" />
+    <Content Include="PIC\FLAGS\4x3\pm.svg" />
+    <Content Include="PIC\FLAGS\4x3\pn.svg" />
+    <Content Include="PIC\FLAGS\4x3\pr.svg" />
+    <Content Include="PIC\FLAGS\4x3\ps.svg" />
+    <Content Include="PIC\FLAGS\4x3\pt.svg" />
+    <Content Include="PIC\FLAGS\4x3\pw.svg" />
+    <Content Include="PIC\FLAGS\4x3\py.svg" />
+    <Content Include="PIC\FLAGS\4x3\qa.svg" />
+    <Content Include="PIC\FLAGS\4x3\re.svg" />
+    <Content Include="PIC\FLAGS\4x3\ro.svg" />
+    <Content Include="PIC\FLAGS\4x3\rs.svg" />
+    <Content Include="PIC\FLAGS\4x3\ru.svg" />
+    <Content Include="PIC\FLAGS\4x3\rw.svg" />
+    <Content Include="PIC\FLAGS\4x3\sa.svg" />
+    <Content Include="PIC\FLAGS\4x3\sb.svg" />
+    <Content Include="PIC\FLAGS\4x3\sc.svg" />
+    <Content Include="PIC\FLAGS\4x3\sd.svg" />
+    <Content Include="PIC\FLAGS\4x3\se.svg" />
+    <Content Include="PIC\FLAGS\4x3\sg.svg" />
+    <Content Include="PIC\FLAGS\4x3\sh.svg" />
+    <Content Include="PIC\FLAGS\4x3\si.svg" />
+    <Content Include="PIC\FLAGS\4x3\sj.svg" />
+    <Content Include="PIC\FLAGS\4x3\sk.svg" />
+    <Content Include="PIC\FLAGS\4x3\sl.svg" />
+    <Content Include="PIC\FLAGS\4x3\sm.svg" />
+    <Content Include="PIC\FLAGS\4x3\sn.svg" />
+    <Content Include="PIC\FLAGS\4x3\so.svg" />
+    <Content Include="PIC\FLAGS\4x3\sr.svg" />
+    <Content Include="PIC\FLAGS\4x3\ss.svg" />
+    <Content Include="PIC\FLAGS\4x3\st.svg" />
+    <Content Include="PIC\FLAGS\4x3\sv.svg" />
+    <Content Include="PIC\FLAGS\4x3\sx.svg" />
+    <Content Include="PIC\FLAGS\4x3\sy.svg" />
+    <Content Include="PIC\FLAGS\4x3\sz.svg" />
+    <Content Include="PIC\FLAGS\4x3\tc.svg" />
+    <Content Include="PIC\FLAGS\4x3\td.svg" />
+    <Content Include="PIC\FLAGS\4x3\tf.svg" />
+    <Content Include="PIC\FLAGS\4x3\tg.svg" />
+    <Content Include="PIC\FLAGS\4x3\th.svg" />
+    <Content Include="PIC\FLAGS\4x3\tj.svg" />
+    <Content Include="PIC\FLAGS\4x3\tk.svg" />
+    <Content Include="PIC\FLAGS\4x3\tl.svg" />
+    <Content Include="PIC\FLAGS\4x3\tm.svg" />
+    <Content Include="PIC\FLAGS\4x3\tn.svg" />
+    <Content Include="PIC\FLAGS\4x3\to.svg" />
+    <Content Include="PIC\FLAGS\4x3\tr.svg" />
+    <Content Include="PIC\FLAGS\4x3\tt.svg" />
+    <Content Include="PIC\FLAGS\4x3\tv.svg" />
+    <Content Include="PIC\FLAGS\4x3\tw.svg" />
+    <Content Include="PIC\FLAGS\4x3\tz.svg" />
+    <Content Include="PIC\FLAGS\4x3\ua.svg" />
+    <Content Include="PIC\FLAGS\4x3\ug.svg" />
+    <Content Include="PIC\FLAGS\4x3\um.svg" />
+    <Content Include="PIC\FLAGS\4x3\un.svg" />
+    <Content Include="PIC\FLAGS\4x3\us.svg" />
+    <Content Include="PIC\FLAGS\4x3\uy.svg" />
+    <Content Include="PIC\FLAGS\4x3\uz.svg" />
+    <Content Include="PIC\FLAGS\4x3\va.svg" />
+    <Content Include="PIC\FLAGS\4x3\vc.svg" />
+    <Content Include="PIC\FLAGS\4x3\ve.svg" />
+    <Content Include="PIC\FLAGS\4x3\vg.svg" />
+    <Content Include="PIC\FLAGS\4x3\vi.svg" />
+    <Content Include="PIC\FLAGS\4x3\vn.svg" />
+    <Content Include="PIC\FLAGS\4x3\vu.svg" />
+    <Content Include="PIC\FLAGS\4x3\wf.svg" />
+    <Content Include="PIC\FLAGS\4x3\ws.svg" />
+    <Content Include="PIC\FLAGS\4x3\xk.svg" />
+    <Content Include="PIC\FLAGS\4x3\ye.svg" />
+    <Content Include="PIC\FLAGS\4x3\yt.svg" />
+    <Content Include="PIC\FLAGS\4x3\za.svg" />
+    <Content Include="PIC\FLAGS\4x3\zm.svg" />
+    <Content Include="PIC\FLAGS\4x3\zw.svg" />
+    <Content Include="PIC\FLAGS\png100px\ad.png" />
+    <Content Include="PIC\FLAGS\png100px\ae.png" />
+    <Content Include="PIC\FLAGS\png100px\af.png" />
+    <Content Include="PIC\FLAGS\png100px\ag.png" />
+    <Content Include="PIC\FLAGS\png100px\ai.png" />
+    <Content Include="PIC\FLAGS\png100px\al.png" />
+    <Content Include="PIC\FLAGS\png100px\am.png" />
+    <Content Include="PIC\FLAGS\png100px\ao.png" />
+    <Content Include="PIC\FLAGS\png100px\aq.png" />
+    <Content Include="PIC\FLAGS\png100px\ar.png" />
+    <Content Include="PIC\FLAGS\png100px\as.png" />
+    <Content Include="PIC\FLAGS\png100px\at.png" />
+    <Content Include="PIC\FLAGS\png100px\au.png" />
+    <Content Include="PIC\FLAGS\png100px\aw.png" />
+    <Content Include="PIC\FLAGS\png100px\ax.png" />
+    <Content Include="PIC\FLAGS\png100px\az.png" />
+    <Content Include="PIC\FLAGS\png100px\ba.png" />
+    <Content Include="PIC\FLAGS\png100px\bb.png" />
+    <Content Include="PIC\FLAGS\png100px\bd.png" />
+    <Content Include="PIC\FLAGS\png100px\be.png" />
+    <Content Include="PIC\FLAGS\png100px\bf.png" />
+    <Content Include="PIC\FLAGS\png100px\bg.png" />
+    <Content Include="PIC\FLAGS\png100px\bh.png" />
+    <Content Include="PIC\FLAGS\png100px\bi.png" />
+    <Content Include="PIC\FLAGS\png100px\bj.png" />
+    <Content Include="PIC\FLAGS\png100px\bl.png" />
+    <Content Include="PIC\FLAGS\png100px\bm.png" />
+    <Content Include="PIC\FLAGS\png100px\bn.png" />
+    <Content Include="PIC\FLAGS\png100px\bo.png" />
+    <Content Include="PIC\FLAGS\png100px\bq.png" />
+    <Content Include="PIC\FLAGS\png100px\br.png" />
+    <Content Include="PIC\FLAGS\png100px\bs.png" />
+    <Content Include="PIC\FLAGS\png100px\bt.png" />
+    <Content Include="PIC\FLAGS\png100px\bv.png" />
+    <Content Include="PIC\FLAGS\png100px\bw.png" />
+    <Content Include="PIC\FLAGS\png100px\by.png" />
+    <Content Include="PIC\FLAGS\png100px\bz.png" />
+    <Content Include="PIC\FLAGS\png100px\ca.png" />
+    <Content Include="PIC\FLAGS\png100px\cc.png" />
+    <Content Include="PIC\FLAGS\png100px\cd.png" />
+    <Content Include="PIC\FLAGS\png100px\cf.png" />
+    <Content Include="PIC\FLAGS\png100px\cg.png" />
+    <Content Include="PIC\FLAGS\png100px\ch.png" />
+    <Content Include="PIC\FLAGS\png100px\ci.png" />
+    <Content Include="PIC\FLAGS\png100px\ck.png" />
+    <Content Include="PIC\FLAGS\png100px\cl.png" />
+    <Content Include="PIC\FLAGS\png100px\cm.png" />
+    <Content Include="PIC\FLAGS\png100px\cn.png" />
+    <Content Include="PIC\FLAGS\png100px\co.png" />
+    <Content Include="PIC\FLAGS\png100px\cr.png" />
+    <Content Include="PIC\FLAGS\png100px\cu.png" />
+    <Content Include="PIC\FLAGS\png100px\cv.png" />
+    <Content Include="PIC\FLAGS\png100px\cw.png" />
+    <Content Include="PIC\FLAGS\png100px\cx.png" />
+    <Content Include="PIC\FLAGS\png100px\cy.png" />
+    <Content Include="PIC\FLAGS\png100px\cz.png" />
+    <Content Include="PIC\FLAGS\png100px\de.png" />
+    <Content Include="PIC\FLAGS\png100px\dj.png" />
+    <Content Include="PIC\FLAGS\png100px\dk.png" />
+    <Content Include="PIC\FLAGS\png100px\dm.png" />
+    <Content Include="PIC\FLAGS\png100px\do.png" />
+    <Content Include="PIC\FLAGS\png100px\dz.png" />
+    <Content Include="PIC\FLAGS\png100px\ec.png" />
+    <Content Include="PIC\FLAGS\png100px\ee.png" />
+    <Content Include="PIC\FLAGS\png100px\eg.png" />
+    <Content Include="PIC\FLAGS\png100px\eh.png" />
+    <Content Include="PIC\FLAGS\png100px\er.png" />
+    <Content Include="PIC\FLAGS\png100px\es.png" />
+    <Content Include="PIC\FLAGS\png100px\et.png" />
+    <Content Include="PIC\FLAGS\png100px\eu.png" />
+    <Content Include="PIC\FLAGS\png100px\fi.png" />
+    <Content Include="PIC\FLAGS\png100px\fj.png" />
+    <Content Include="PIC\FLAGS\png100px\fk.png" />
+    <Content Include="PIC\FLAGS\png100px\fm.png" />
+    <Content Include="PIC\FLAGS\png100px\fo.png" />
+    <Content Include="PIC\FLAGS\png100px\fr.png" />
+    <Content Include="PIC\FLAGS\png100px\ga.png" />
+    <Content Include="PIC\FLAGS\png100px\gb-eng.png" />
+    <Content Include="PIC\FLAGS\png100px\gb-nir.png" />
+    <Content Include="PIC\FLAGS\png100px\gb-sct.png" />
+    <Content Include="PIC\FLAGS\png100px\gb-wls.png" />
+    <Content Include="PIC\FLAGS\png100px\gb.png" />
+    <Content Include="PIC\FLAGS\png100px\gd.png" />
+    <Content Include="PIC\FLAGS\png100px\ge.png" />
+    <Content Include="PIC\FLAGS\png100px\gf.png" />
+    <Content Include="PIC\FLAGS\png100px\gg.png" />
+    <Content Include="PIC\FLAGS\png100px\gh.png" />
+    <Content Include="PIC\FLAGS\png100px\gi.png" />
+    <Content Include="PIC\FLAGS\png100px\gl.png" />
+    <Content Include="PIC\FLAGS\png100px\gm.png" />
+    <Content Include="PIC\FLAGS\png100px\gn.png" />
+    <Content Include="PIC\FLAGS\png100px\gp.png" />
+    <Content Include="PIC\FLAGS\png100px\gq.png" />
+    <Content Include="PIC\FLAGS\png100px\gr.png" />
+    <Content Include="PIC\FLAGS\png100px\gs.png" />
+    <Content Include="PIC\FLAGS\png100px\gt.png" />
+    <Content Include="PIC\FLAGS\png100px\gu.png" />
+    <Content Include="PIC\FLAGS\png100px\gw.png" />
+    <Content Include="PIC\FLAGS\png100px\gy.png" />
+    <Content Include="PIC\FLAGS\png100px\hk.png" />
+    <Content Include="PIC\FLAGS\png100px\hm.png" />
+    <Content Include="PIC\FLAGS\png100px\hn.png" />
+    <Content Include="PIC\FLAGS\png100px\hr.png" />
+    <Content Include="PIC\FLAGS\png100px\ht.png" />
+    <Content Include="PIC\FLAGS\png100px\hu.png" />
+    <Content Include="PIC\FLAGS\png100px\id.png" />
+    <Content Include="PIC\FLAGS\png100px\ie.png" />
+    <Content Include="PIC\FLAGS\png100px\il.png" />
+    <Content Include="PIC\FLAGS\png100px\im.png" />
+    <Content Include="PIC\FLAGS\png100px\in.png" />
+    <Content Include="PIC\FLAGS\png100px\io.png" />
+    <Content Include="PIC\FLAGS\png100px\iq.png" />
+    <Content Include="PIC\FLAGS\png100px\ir.png" />
+    <Content Include="PIC\FLAGS\png100px\is.png" />
+    <Content Include="PIC\FLAGS\png100px\it.png" />
+    <Content Include="PIC\FLAGS\png100px\je.png" />
+    <Content Include="PIC\FLAGS\png100px\jm.png" />
+    <Content Include="PIC\FLAGS\png100px\jo.png" />
+    <Content Include="PIC\FLAGS\png100px\jp.png" />
+    <Content Include="PIC\FLAGS\png100px\ke.png" />
+    <Content Include="PIC\FLAGS\png100px\kg.png" />
+    <Content Include="PIC\FLAGS\png100px\kh.png" />
+    <Content Include="PIC\FLAGS\png100px\ki.png" />
+    <Content Include="PIC\FLAGS\png100px\km.png" />
+    <Content Include="PIC\FLAGS\png100px\kn.png" />
+    <Content Include="PIC\FLAGS\png100px\kp.png" />
+    <Content Include="PIC\FLAGS\png100px\kr.png" />
+    <Content Include="PIC\FLAGS\png100px\kw.png" />
+    <Content Include="PIC\FLAGS\png100px\ky.png" />
+    <Content Include="PIC\FLAGS\png100px\kz.png" />
+    <Content Include="PIC\FLAGS\png100px\la.png" />
+    <Content Include="PIC\FLAGS\png100px\lb.png" />
+    <Content Include="PIC\FLAGS\png100px\lc.png" />
+    <Content Include="PIC\FLAGS\png100px\li.png" />
+    <Content Include="PIC\FLAGS\png100px\lk.png" />
+    <Content Include="PIC\FLAGS\png100px\lr.png" />
+    <Content Include="PIC\FLAGS\png100px\ls.png" />
+    <Content Include="PIC\FLAGS\png100px\lt.png" />
+    <Content Include="PIC\FLAGS\png100px\lu.png" />
+    <Content Include="PIC\FLAGS\png100px\lv.png" />
+    <Content Include="PIC\FLAGS\png100px\ly.png" />
+    <Content Include="PIC\FLAGS\png100px\ma.png" />
+    <Content Include="PIC\FLAGS\png100px\mc.png" />
+    <Content Include="PIC\FLAGS\png100px\md.png" />
+    <Content Include="PIC\FLAGS\png100px\me.png" />
+    <Content Include="PIC\FLAGS\png100px\mf.png" />
+    <Content Include="PIC\FLAGS\png100px\mg.png" />
+    <Content Include="PIC\FLAGS\png100px\mh.png" />
+    <Content Include="PIC\FLAGS\png100px\mk.png" />
+    <Content Include="PIC\FLAGS\png100px\ml.png" />
+    <Content Include="PIC\FLAGS\png100px\mm.png" />
+    <Content Include="PIC\FLAGS\png100px\mn.png" />
+    <Content Include="PIC\FLAGS\png100px\mo.png" />
+    <Content Include="PIC\FLAGS\png100px\mp.png" />
+    <Content Include="PIC\FLAGS\png100px\mq.png" />
+    <Content Include="PIC\FLAGS\png100px\mr.png" />
+    <Content Include="PIC\FLAGS\png100px\ms.png" />
+    <Content Include="PIC\FLAGS\png100px\mt.png" />
+    <Content Include="PIC\FLAGS\png100px\mu.png" />
+    <Content Include="PIC\FLAGS\png100px\mv.png" />
+    <Content Include="PIC\FLAGS\png100px\mw.png" />
+    <Content Include="PIC\FLAGS\png100px\mx.png" />
+    <Content Include="PIC\FLAGS\png100px\my.png" />
+    <Content Include="PIC\FLAGS\png100px\mz.png" />
+    <Content Include="PIC\FLAGS\png100px\na.png" />
+    <Content Include="PIC\FLAGS\png100px\nc.png" />
+    <Content Include="PIC\FLAGS\png100px\ne.png" />
+    <Content Include="PIC\FLAGS\png100px\nf.png" />
+    <Content Include="PIC\FLAGS\png100px\ng.png" />
+    <Content Include="PIC\FLAGS\png100px\ni.png" />
+    <Content Include="PIC\FLAGS\png100px\nl.png" />
+    <Content Include="PIC\FLAGS\png100px\no.png" />
+    <Content Include="PIC\FLAGS\png100px\np.png" />
+    <Content Include="PIC\FLAGS\png100px\nr.png" />
+    <Content Include="PIC\FLAGS\png100px\nu.png" />
+    <Content Include="PIC\FLAGS\png100px\nz.png" />
+    <Content Include="PIC\FLAGS\png100px\om.png" />
+    <Content Include="PIC\FLAGS\png100px\pa.png" />
+    <Content Include="PIC\FLAGS\png100px\pe.png" />
+    <Content Include="PIC\FLAGS\png100px\pf.png" />
+    <Content Include="PIC\FLAGS\png100px\pg.png" />
+    <Content Include="PIC\FLAGS\png100px\ph.png" />
+    <Content Include="PIC\FLAGS\png100px\pk.png" />
+    <Content Include="PIC\FLAGS\png100px\pl.png" />
+    <Content Include="PIC\FLAGS\png100px\pm.png" />
+    <Content Include="PIC\FLAGS\png100px\pn.png" />
+    <Content Include="PIC\FLAGS\png100px\pr.png" />
+    <Content Include="PIC\FLAGS\png100px\ps.png" />
+    <Content Include="PIC\FLAGS\png100px\pt.png" />
+    <Content Include="PIC\FLAGS\png100px\pw.png" />
+    <Content Include="PIC\FLAGS\png100px\py.png" />
+    <Content Include="PIC\FLAGS\png100px\qa.png" />
+    <Content Include="PIC\FLAGS\png100px\re.png" />
+    <Content Include="PIC\FLAGS\png100px\ro.png" />
+    <Content Include="PIC\FLAGS\png100px\rs.png" />
+    <Content Include="PIC\FLAGS\png100px\ru.png" />
+    <Content Include="PIC\FLAGS\png100px\rw.png" />
+    <Content Include="PIC\FLAGS\png100px\sa.png" />
+    <Content Include="PIC\FLAGS\png100px\sb.png" />
+    <Content Include="PIC\FLAGS\png100px\sc.png" />
+    <Content Include="PIC\FLAGS\png100px\sd.png" />
+    <Content Include="PIC\FLAGS\png100px\se.png" />
+    <Content Include="PIC\FLAGS\png100px\sg.png" />
+    <Content Include="PIC\FLAGS\png100px\sh.png" />
+    <Content Include="PIC\FLAGS\png100px\si.png" />
+    <Content Include="PIC\FLAGS\png100px\sj.png" />
+    <Content Include="PIC\FLAGS\png100px\sk.png" />
+    <Content Include="PIC\FLAGS\png100px\sl.png" />
+    <Content Include="PIC\FLAGS\png100px\sm.png" />
+    <Content Include="PIC\FLAGS\png100px\sn.png" />
+    <Content Include="PIC\FLAGS\png100px\so.png" />
+    <Content Include="PIC\FLAGS\png100px\sr.png" />
+    <Content Include="PIC\FLAGS\png100px\ss.png" />
+    <Content Include="PIC\FLAGS\png100px\st.png" />
+    <Content Include="PIC\FLAGS\png100px\sv.png" />
+    <Content Include="PIC\FLAGS\png100px\sx.png" />
+    <Content Include="PIC\FLAGS\png100px\sy.png" />
+    <Content Include="PIC\FLAGS\png100px\sz.png" />
+    <Content Include="PIC\FLAGS\png100px\tc.png" />
+    <Content Include="PIC\FLAGS\png100px\td.png" />
+    <Content Include="PIC\FLAGS\png100px\tf.png" />
+    <Content Include="PIC\FLAGS\png100px\tg.png" />
+    <Content Include="PIC\FLAGS\png100px\th.png" />
+    <Content Include="PIC\FLAGS\png100px\tj.png" />
+    <Content Include="PIC\FLAGS\png100px\tk.png" />
+    <Content Include="PIC\FLAGS\png100px\tl.png" />
+    <Content Include="PIC\FLAGS\png100px\tm.png" />
+    <Content Include="PIC\FLAGS\png100px\tn.png" />
+    <Content Include="PIC\FLAGS\png100px\to.png" />
+    <Content Include="PIC\FLAGS\png100px\tr.png" />
+    <Content Include="PIC\FLAGS\png100px\tt.png" />
+    <Content Include="PIC\FLAGS\png100px\tv.png" />
+    <Content Include="PIC\FLAGS\png100px\tw.png" />
+    <Content Include="PIC\FLAGS\png100px\tz.png" />
+    <Content Include="PIC\FLAGS\png100px\ua.png" />
+    <Content Include="PIC\FLAGS\png100px\ug.png" />
+    <Content Include="PIC\FLAGS\png100px\um.png" />
+    <Content Include="PIC\FLAGS\png100px\us.png" />
+    <Content Include="PIC\FLAGS\png100px\uy.png" />
+    <Content Include="PIC\FLAGS\png100px\uz.png" />
+    <Content Include="PIC\FLAGS\png100px\va.png" />
+    <Content Include="PIC\FLAGS\png100px\vc.png" />
+    <Content Include="PIC\FLAGS\png100px\ve.png" />
+    <Content Include="PIC\FLAGS\png100px\vg.png" />
+    <Content Include="PIC\FLAGS\png100px\vi.png" />
+    <Content Include="PIC\FLAGS\png100px\vn.png" />
+    <Content Include="PIC\FLAGS\png100px\vu.png" />
+    <Content Include="PIC\FLAGS\png100px\wf.png" />
+    <Content Include="PIC\FLAGS\png100px\ws.png" />
+    <Content Include="PIC\FLAGS\png100px\xk.png" />
+    <Content Include="PIC\FLAGS\png100px\ye.png" />
+    <Content Include="PIC\FLAGS\png100px\yt.png" />
+    <Content Include="PIC\FLAGS\png100px\za.png" />
+    <Content Include="PIC\FLAGS\png100px\zm.png" />
+    <Content Include="PIC\FLAGS\png100px\zw.png" />
+    <Content Include="PIC\LC\LOGO\LiveChat_Logo_RGB_Orange.png" />
+    <Content Include="PIC\LC\LOGO\LiveChat_Logo_RGB_Orange_LiveChat_Logo_RGB_Orange.svg" />
+    <Content Include="PIC\LC\LOGO\orange.png" />
+    <Content Include="PIC\LC\LOGO\orange.svg" />
+    <Content Include="PIC\LC\LOGO\Stacked_LiveChat_Logo.png" />
+    <Content Include="PIC\LC\LOGO\Stacked_LiveChat_Logo_Stacked_LiveChat_Logo.svg" />
+    <Content Include="PIC\LC\LOGO\white.png" />
+    <Content Include="PIC\LC\LOGO\white.svg" />
+    <Content Include="PIC\LOGIN\Entrymo_logo.png" />
+    <Content Include="PIC\LOGIN\login_background.jpg" />
+    <Content Include="PIC\LOGIN\Mobilisis_logo_background.jpg" />
+    <Content Include="PIC\LOGIN\passwordIcon.svg" />
+    <Content Include="PIC\LOGIN\usernameIcon.svg" />
+    <Content Include="PIC\LOGO\mobilisis.jpg" />
+    <Content Include="PIC\LOGO\mobilisis.png" />
+    <Content Include="PIC\LOGO\tisak.png" />
+    <Content Include="PIC\MAP\MARKERS\DISTANCE\end_route.png" />
+    <Content Include="PIC\MAP\MARKERS\DISTANCE\marker_blue.png" />
+    <Content Include="PIC\MAP\MARKERS\DISTANCE\start_route.png" />
+    <Content Include="PIC\MAP\MARKERS\end_route.png" />
+    <Content Include="PIC\MAP\MARKERS\FUEL\fuel-fill-report_green.png" />
+    <Content Include="PIC\MAP\MARKERS\FUEL\fuel-fill-report_red.png" />
+    <Content Include="PIC\MAP\MARKERS\MOBILEYE\distance.png" />
+    <Content Include="PIC\MAP\MARKERS\MOBILEYE\distance1.png" />
+    <Content Include="PIC\MAP\MARKERS\MOBILEYE\distance2.png" />
+    <Content Include="PIC\MAP\MARKERS\MOBILEYE\left_waring.png" />
+    <Content Include="PIC\MAP\MARKERS\MOBILEYE\right_warning.png" />
+    <Content Include="PIC\MAP\MARKERS\MOBILEYE\wipers.png" />
+    <Content Include="PIC\MAP\MARKERS\route_start.png" />
+    <Content Include="PIC\MAP\MARKERS\start_route.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\1.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\10.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\11.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\12.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\13.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\14.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\15.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\16.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\17.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\18.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\19.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\2.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\20.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\21.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\22.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\23.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\24.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\25.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\26.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\27.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\28.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\29.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\3.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\30.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\4.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\5.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\6.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\7.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\8.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\9.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\A.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\B.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\C.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\D.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\E.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\F.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\G.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\H.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\I.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\J.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\K.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\L.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\M.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\N.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\O.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\P.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\R.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\S.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\T.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\U.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\V.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\Z.png" />
+    <Content Include="PIC\MAP\ROUTE_ICONS\_.png" />
+    <Content Include="PIC\MAP\STOP_ICONS\stop_0.png" />
+    <Content Include="PIC\MAP\STOP_ICONS\stop_0_15min.png" />
+    <Content Include="PIC\MAP\STOP_ICONS\stop_1.png" />
+    <Content Include="PIC\MAP\STOP_ICONS\stop_10.png" />
+    <Content Include="PIC\MAP\STOP_ICONS\stop_11.png" />
+    <Content Include="PIC\MAP\STOP_ICONS\stop_12.png" />
+    <Content Include="PIC\MAP\STOP_ICONS\stop_15_30min.png" />
+    <Content Include="PIC\MAP\STOP_ICONS\stop_2.png" />
+    <Content Include="PIC\MAP\STOP_ICONS\stop_3.png" />
+    <Content Include="PIC\MAP\STOP_ICONS\stop_30_45min.png" />
+    <Content Include="PIC\MAP\STOP_ICONS\stop_4.png" />
+    <Content Include="PIC\MAP\STOP_ICONS\stop_45_60min.png" />
+    <Content Include="PIC\MAP\STOP_ICONS\stop_5.png" />
+    <Content Include="PIC\MAP\STOP_ICONS\stop_6.png" />
+    <Content Include="PIC\MAP\STOP_ICONS\stop_7.png" />
+    <Content Include="PIC\MAP\STOP_ICONS\stop_8.png" />
+    <Content Include="PIC\MAP\STOP_ICONS\stop_9.png" />
+    <Content Include="PIC\MAP\SWITCH_BUTTON\google-maps-logo.png" />
+    <Content Include="PIC\MAP\SWITCH_BUTTON\here-logo.png" />
+    <Content Include="PIC\UI\icon_waiting.gif" />
+    <Content Include="Plugins\crypto-js.min.js" />
+    <None Include="HTML\Register.cshtml" />
+    <Content Include="JS\Register.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\bootstrap.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\bootstrap.min.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx-diagram.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx-diagram.min.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx-gantt.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx-gantt.min.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.carmine.compact.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.carmine.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.common.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.contrast.compact.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.contrast.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.dark.compact.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.dark.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.darkmoon.compact.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.darkmoon.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.darkviolet.compact.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.darkviolet.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.generic.cnv.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.generic.cocacola.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.generic.euromat.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.generic.fleet.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.generic.hs.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.generic.ht.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.generic.hteronetfleet.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.generic.ina.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.generic.megamont.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.generic.pvp.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.generic.rasco.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.generic.tisak.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.generic.TravelApp.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.greenmist.compact.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.greenmist.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.light.compact.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.light.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.material.blue.dark.compact.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.material.blue.dark.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.material.blue.light.compact.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.material.blue.light.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.material.lime.dark.compact.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.material.lime.dark.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.material.lime.light.compact.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.material.lime.light.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.material.orange.dark.compact.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.material.orange.dark.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.material.orange.light.compact.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.material.orange.light.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.material.purple.dark.compact.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.material.purple.dark.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.material.purple.light.compact.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.material.purple.light.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.material.teal.dark.compact.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.material.teal.dark.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.material.teal.light.compact.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.material.teal.light.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.softblue.compact.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\dx.softblue.css" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\angular.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\angular.min.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\aspnet\dx.aspnet.data.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\aspnet\dx.aspnet.mvc.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\bootstrap.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\bootstrap.min.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\cldr.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\cldr.min.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\cldr\event.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\cldr\event.min.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\cldr\supplemental.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\cldr\supplemental.min.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\cldr\unresolved.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\cldr\unresolved.min.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\dx-diagram.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\dx-diagram.min.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\dx-gantt.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\dx-gantt.min.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\dx-quill.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\dx-quill.min.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\dx.all.debug.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\dx.all.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\dx.viz.debug.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\dx.viz.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\dx.web.debug.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\dx.web.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\exceljs.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\exceljs.min.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\FileSaver.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\FileSaver.min.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\globalize.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\globalize.min.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\globalize\currency.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\globalize\currency.min.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\globalize\date.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\globalize\date.min.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\globalize\message.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\globalize\message.min.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\globalize\number.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\globalize\number.min.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\jquery.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\jquery.min.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\jspdf.plugin.autotable.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\jspdf.plugin.autotable.min.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\jspdf.umd.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\jspdf.umd.min.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\jszip.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\jszip.min.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\knockout-latest.debug.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\knockout-latest.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\localization\dx.messages.ba.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\localization\dx.messages.cs.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\localization\dx.messages.da.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\localization\dx.messages.de.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\localization\dx.messages.el.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\localization\dx.messages.en.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\localization\dx.messages.es.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\localization\dx.messages.fi.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\localization\dx.messages.fr.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\localization\dx.messages.gr.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\localization\dx.messages.hr.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\localization\dx.messages.hu.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\localization\dx.messages.it.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\localization\dx.messages.ja.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\localization\dx.messages.nl.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\localization\dx.messages.pt.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\localization\dx.messages.ro.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\localization\dx.messages.ru.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\localization\dx.messages.sl.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\localization\dx.messages.sr.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\localization\dx.messages.sv.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\localization\dx.messages.tr.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\localization\dx.messages.ua.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\localization\dx.messages.vi.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\localization\dx.messages.zh-tw.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\localization\dx.messages.zh.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\vectormap-data\africa.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\vectormap-data\canada.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\vectormap-data\eurasia.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\vectormap-data\europe.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\vectormap-data\usa.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\vectormap-data\world.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\vectormap-utils\dx.vectormaputils.debug.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\vectormap-utils\dx.vectormaputils.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\js\vectormap-utils\dx.vectormaputils.node.js" />
+    <Content Include="Plugins\fontawesome\v6.1.0\css\fontawesome_6.1.0.css" />
+    <Content Include="Plugins\fontawesome\v6.1.1\css\all.min.css" />
+    <Content Include="Plugins\fontawesome\v6\fd13aa364a.js" />
+    <Content Include="Plugins\jquery\3.6.0\jquery.min.js" />
+    <Content Include="Plugins\jquery\ui\1.13.0\jquery-ui.min.js" />
+    <Content Include="Plugins\less\less.min.js" />
+    <Content Include="Plugins\litepicker\litepicker.css" />
+    <Content Include="Plugins\litepicker\litepicker.js" />
+    <Content Include="Plugins\moment\2.27.0\locale\bs.min.js" />
+    <Content Include="Plugins\moment\2.27.0\locale\da.min.js" />
+    <Content Include="Plugins\moment\2.27.0\locale\de.min.js" />
+    <Content Include="Plugins\moment\2.27.0\locale\el.min.js" />
+    <Content Include="Plugins\moment\2.27.0\locale\en.min.js" />
+    <Content Include="Plugins\moment\2.27.0\locale\es.min.js" />
+    <Content Include="Plugins\moment\2.27.0\locale\fr.min.js" />
+    <Content Include="Plugins\moment\2.27.0\locale\hr.min.js" />
+    <Content Include="Plugins\moment\2.27.0\locale\hu.min.js" />
+    <Content Include="Plugins\moment\2.27.0\locale\it.min.js" />
+    <Content Include="Plugins\moment\2.27.0\locale\nl.min.js" />
+    <Content Include="Plugins\moment\2.27.0\locale\ro.min.js" />
+    <Content Include="Plugins\moment\2.27.0\locale\sk.min.js" />
+    <Content Include="Plugins\moment\2.27.0\locale\sl.min.js" />
+    <Content Include="Plugins\moment\2.27.0\locale\sr.min.js" />
+    <Content Include="Plugins\moment\2.27.0\locale\tr.min.js" />
+    <Content Include="Plugins\moment\2.27.0\locale\uk.min.js" />
+    <Content Include="Plugins\moment\2.27.0\moment.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\fonts\Roboto-300.ttf" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\fonts\Roboto-300.woff" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\fonts\Roboto-300.woff2" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\fonts\Roboto-400.ttf" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\fonts\Roboto-400.woff" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\fonts\Roboto-400.woff2" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\fonts\Roboto-500.ttf" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\fonts\Roboto-500.woff" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\fonts\Roboto-500.woff2" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\fonts\Roboto-700.ttf" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\fonts\Roboto-700.woff" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\fonts\Roboto-700.woff2" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\icons\dxicons.ttf" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\icons\dxicons.woff" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\icons\dxicons.woff2" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\icons\dxiconsmaterial.ttf" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\icons\dxiconsmaterial.woff" />
+    <Content Include="Plugins\DevExtreme_22.1.3\Lib\css\icons\dxiconsmaterial.woff2" />
+    <Content Include="Plugins\fontawesome\v6.1.0\webfonts\fa-brands-400.ttf" />
+    <Content Include="Plugins\fontawesome\v6.1.0\webfonts\fa-brands-400.woff2" />
+    <Content Include="Plugins\fontawesome\v6.1.0\webfonts\fa-duotone-900.ttf" />
+    <Content Include="Plugins\fontawesome\v6.1.0\webfonts\fa-duotone-900.woff2" />
+    <Content Include="Plugins\fontawesome\v6.1.0\webfonts\fa-light-300.ttf" />
+    <Content Include="Plugins\fontawesome\v6.1.0\webfonts\fa-light-300.woff2" />
+    <Content Include="Plugins\fontawesome\v6.1.0\webfonts\fa-regular-400.ttf" />
+    <Content Include="Plugins\fontawesome\v6.1.0\webfonts\fa-regular-400.woff2" />
+    <Content Include="Plugins\fontawesome\v6.1.0\webfonts\fa-solid-900.ttf" />
+    <Content Include="Plugins\fontawesome\v6.1.0\webfonts\fa-solid-900.woff2" />
+    <Content Include="Plugins\fontawesome\v6.1.0\webfonts\fa-thin-100.ttf" />
+    <Content Include="Plugins\fontawesome\v6.1.0\webfonts\fa-thin-100.woff2" />
+    <Content Include="Plugins\fontawesome\v6.1.0\webfonts\fa-v4compatibility.ttf" />
+    <Content Include="Plugins\fontawesome\v6.1.0\webfonts\fa-v4compatibility.woff2" />
+    <Content Include="Plugins\fontawesome\v6.1.1\webfonts\fa-brands-400.ttf" />
+    <Content Include="Plugins\fontawesome\v6.1.1\webfonts\fa-brands-400.woff2" />
+    <Content Include="Plugins\fontawesome\v6.1.1\webfonts\fa-duotone-900.ttf" />
+    <Content Include="Plugins\fontawesome\v6.1.1\webfonts\fa-duotone-900.woff2" />
+    <Content Include="Plugins\fontawesome\v6.1.1\webfonts\fa-light-300.ttf" />
+    <Content Include="Plugins\fontawesome\v6.1.1\webfonts\fa-light-300.woff2" />
+    <Content Include="Plugins\fontawesome\v6.1.1\webfonts\fa-regular-400.ttf" />
+    <Content Include="Plugins\fontawesome\v6.1.1\webfonts\fa-regular-400.woff2" />
+    <Content Include="Plugins\fontawesome\v6.1.1\webfonts\fa-solid-900.ttf" />
+    <Content Include="Plugins\fontawesome\v6.1.1\webfonts\fa-solid-900.woff2" />
+    <Content Include="Plugins\fontawesome\v6.1.1\webfonts\fa-thin-100.ttf" />
+    <Content Include="Plugins\fontawesome\v6.1.1\webfonts\fa-thin-100.woff2" />
+    <Content Include="Plugins\fontawesome\v6.1.1\webfonts\fa-v4compatibility.ttf" />
+    <Content Include="Plugins\fontawesome\v6.1.1\webfonts\fa-v4compatibility.woff2" />
+    <Content Include="Plugins\less\less.min.js.map" />
+    <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.4.1.js" />
+    <Content Include="Scripts\jquery-3.4.1.min.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.js" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Slike\background_image_forma.jpg" />
+    <Content Include="Slike\favicon.png" />
+    <Content Include="Slike\mobilisis.png" />
+    <Content Include="Slike\nova_bckground.jpg" />
+    <Content Include="Slike\nova_pozadina.jpg" />
+    <Content Include="Slike\slika_login_forma.jpg" />
+    <Content Include="Slike\umjesto_loga.jpg" />
+    <Content Include="CSS\style.css" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\About.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <None Include="packages.config" />
+    <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>54090</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:54090/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

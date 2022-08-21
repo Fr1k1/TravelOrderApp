@@ -1,0 +1,168 @@
+﻿body {
+    background: url("../Slike/nova_bckground.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+
+
+.fw-normal {
+    font-weight: 800 !important;
+}
+
+.forgotten_txt {
+    margin-bottom: 30px;
+}
+
+.ikonica {
+    top: 20px;
+    bottom: 20px;
+}
+
+.sakri {
+    visibility: hidden;
+    display: none;
+}
+
+.card {
+    height: 550px !important;
+}
+
+
+#alert {
+    margin: 10px;
+}
+
+#register_card {
+    height: 920px !important;
+}
+
+#register_card_2 {
+    height: 500px !important;
+}
+
+
+
+
+
+@-webkit-keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes jello-horizontal {
+    0% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+
+    30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+    }
+
+    40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+    }
+
+    50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+    }
+
+    65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+    }
+
+    75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+    }
+
+    100% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.jello-horizontal {
+    -webkit-animation: jello-horizontal 0.9s both;
+    animation: jello-horizontal 0.9s both;
+}
+
+.kartica {
+    height: 700px;
+}
+
+
+.velicina-slike {
+    width: 624px !important;
+    height: 550px !important;
+}
+
+.promjena_velicine {
+}
+
+.dalje {
+    margin-bottom: 500px !important;
+    display: inline-block;
+    position: absolute;
+}
+
+
+#pt2 {
+    margin-top: -350px;
+    position: absolute;
+}
+
+#card2 {
+    height: 920px !important;
+}
+
+.crveni {
+    display: inline-block;
+    position: absolute;
+    right: 100px;
+    top: 380px;
+}
+
+#gumb_prijava {
+    display: inline-block;
+}

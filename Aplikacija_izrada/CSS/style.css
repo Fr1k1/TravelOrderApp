@@ -1,0 +1,899 @@
+﻿
+body, html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+    background: #FEFBF6;
+}
+
+#main {
+    background: #FEFBF6;
+}
+
+
+#toolbar {
+    padding: 5px 10px;
+}
+
+.dx-list-item-icon-container,
+.dx-toolbar-before {
+    width: 36px;
+    padding-right: 0 !important;
+    text-align: center;
+}
+
+.dx-button {
+    background-color: rgba(191, 191, 191, -0.15);
+    border: none;
+}
+
+.dx-drawer-expand.dx-drawer-right .panel-list {
+    float: right;
+}
+
+.panel-list .dx-list-item {
+    color: #fff;
+    border-top: 0px solid rgba(221, 221, 221, 0.2);
+}
+
+    .panel-list .dx-list-item .dx-icon {
+        color: #fff !important;
+    }
+
+
+
+.caption {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+label {
+    font-weight: bold;
+}
+
+#content, #content2 {
+    height: calc(100% - 50px);
+    color: black;
+}
+
+    #content h2 {
+        font-size: 26px;
+    }
+
+
+
+
+#age {
+    display: inline-block;
+}
+
+
+.dx-list-item {
+    text-decoration: none;
+}
+
+
+.panel-list .dx-scrollable-container {
+    width: 265px;
+}
+
+.toolbar-label,
+.toolbar-label > b {
+    font-size: 16px;
+}
+
+#products {
+    margin-top: 10px;
+}
+
+
+.nadzorna_ploca {
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: 800;
+}
+
+
+.dx-scrollable-content {
+    height: 100%;
+}
+
+#drawer {
+    height: calc(100% - 50px);
+}
+
+.dx-theme-background-color {
+    background-color: #363636 !important;
+    /*important overridea sve dosadasnje stilove*/
+}
+
+.dx-theme-generic-typography {
+    background: white;
+}
+
+
+
+.dx-toolbar .dx-toolbar-items-container {
+    height: 50px !important;
+}
+
+img {
+    margin-left: 10px !important;
+}
+
+.gumb_traka {
+    background: #00395d;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+}
+
+.chat_traka {
+    background: #D61C4E;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+}
+
+/*.dx-item-content:hover {
+    background: #06283D;        ovo mi je jako lose izgledalo na APITabs
+}*/
+
+#chart {
+    height: 100%;
+    padding: 30px;
+    background-color: #fff;
+}
+
+#chart2, #chart3 {
+    height: 100%;
+    padding: 30px;
+    background-color: #fff;
+}
+
+
+#pie {
+    height: 100%;
+    padding: 30px;
+    background-color: #fff;
+}
+
+
+
+#chart {
+    height: 100%;
+    padding: 30px;
+    background-color: #fff;
+}
+
+
+
+.caption {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: 35% 63%;
+    grid-template-rows: 50% 48%;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1800px;
+    height: 100%;
+}
+
+
+
+
+.caption {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+
+#drawer .dx-theme-accent-as-background-color {
+    background-color: #2a2a2a !important;
+    fill: #2a2a2a !important;
+}
+
+
+.dxc-chart {
+    background: white
+}
+
+
+.dx-datagrid .dx-data-row > td.bullet {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.sakri {
+    visibility: hidden;
+    display: none;
+}
+
+.demo-container {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons-demo {
+    width: 600px;
+    align-self: center;
+}
+
+.buttons-column > .column-header {
+    flex-grow: 0;
+    width: 150px;
+    height: 35px;
+    font-size: 130%;
+    opacity: 0.6;
+    text-align: left;
+    padding-left: 15px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+    .buttons > div {
+        width: 300px;
+        flex-wrap: nowrap;
+        display: flex;
+    }
+
+.buttons-column > div {
+    width: 150px;
+    height: 50px;
+    text-align: center;
+}
+
+.buttons-column {
+    width: 150px;
+    justify-content: center;
+}
+
+
+.dx-treeview .dx-treeview-toggle-item-visibility {
+    right: 10px !important;
+    left: auto !important;
+}
+
+#content42, #content43, #content44, #content45, #content5, #content51, #APIheader {
+    height: calc(100% - 50px);
+}
+
+.dx-popup-content p {
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.mainDiv {
+    gap: 50px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    justify-content: center;
+    background-color: white;
+    z-index: 1000;
+}
+
+#APIheader {
+    height: 20%;
+    text-align: center;
+    background: #413F42 !important;
+}
+
+    #APIheader p {
+        display: block;
+        color: white;
+        margin-top: 0;
+        font-size: 15px;
+    }
+
+.apiTabs {
+    margin: 50px;
+    padding: 30px;
+    border: 1px solid #f1f1fe;
+    box-shadow: 0 3px 20px #ccc;
+    width: 42%;
+    display: inline-block;
+}
+
+#APImain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*height: calc(100% - 200px);*/
+    height: 75%;
+}
+
+dx-drawer-content {
+    height: calc(100% - 50px);
+    display: inline-block;
+}
+
+#PlanHeader {
+    text-align: center;
+}
+
+    #PlanHeader h1 {
+        text-align: center;
+        font-size: xx-large;
+    }
+
+#naslov-poslovni-plan {
+    text-align: center;
+    font-weight: 800;
+    padding: 5px 15px;
+    display: inline-block;
+    color: #dedede;
+    font-size: 40px;
+}
+
+.mainPricePlanDiv {
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 20px 10px;
+}
+
+.pricePlanDiv {
+    margin: 0;
+    width: 25%;
+    position: relative;
+    float: left;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#PlanHeaderMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    margin-bottom: 0px;
+    padding-bottom: 0;
+}
+/*kartice za planove*/
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,800);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:800);
+
+.snip1214 {
+    font-family: 'Raleway', Arial, sans-serif;
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+    max-width: 1000px;
+}
+
+    .snip1214 .plan {
+        margin: 0;
+        width: 25%;
+        position: relative;
+        float: left;
+        background-color: #ffffff;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .snip1214 * {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .snip1214 header {
+        position: relative;
+    }
+
+    .snip1214 .plan-title {
+        position: relative;
+        top: 0;
+        font-weight: 800;
+        padding: 5px 15px;
+        margin: 0 auto;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        margin: 0;
+        display: inline-block;
+        background-color: #222f3d;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+
+    .snip1214 .plan-cost {
+        padding: 0px 10px 20px;
+    }
+
+    .snip1214 .plan-price {
+        font-family: 'Montserrat', Arial, sans-serif;
+        font-weight: 800;
+        font-size: 2.4em;
+        color: #34495e;
+    }
+
+    .snip1214 .plan-type {
+        opacity: 0.6;
+    }
+
+    .snip1214 .plan-features {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        list-style: outside none none;
+        font-size: 0.8em;
+    }
+
+        .snip1214 .plan-features li {
+            border-top: 1px solid #d2d7e2;
+            padding: 10px 5%;
+        }
+
+            .snip1214 .plan-features li:nth-child(even) {
+                background: rgba(0, 0, 0, 0.08);
+            }
+
+        .snip1214 .plan-features i {
+            margin-right: 8px;
+            opacity: 0.4;
+        }
+
+.plan-select {
+    border-top: 1px solid #d2d7e2;
+    padding: 10px 10px 0;
+}
+
+.plan-select {
+    background-color: #222f3d;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+    font-weight: 800;
+    text-transform: uppercase;
+    /*display: inline-block;*/
+}
+
+    .plan-select:hover {
+        background-color: #46627f;
+    }
+
+.featured {
+    margin-top: -10px;
+    background-color: #1ca8dd;
+    border-radius: 8px;
+    color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.snip1214 .featured .plan-title,
+.snip1214 .featured .plan-price {
+    color: #ffffff;
+}
+
+.snip1214 .featured .plan-cost {
+    padding: 10px 10px 20px;
+}
+
+.snip1214 .featured .plan-features li {
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.snip1214 .featured .plan-select {
+    padding: 20px 10px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+@media only screen and (max-width: 767px) {
+    .snip1214 .plan {
+        width: 50%;
+    }
+
+    .snip1214 .plan-title,
+    .plan-select a {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    .snip1214 .plan-cost,
+    .snip1214 .featured .plan-cost {
+        padding: 20px 10px 20px;
+    }
+
+    .snip1214 .plan-select,
+    .snip1214 .featured .plan-select {
+        padding: 10px 10px 10px;
+    }
+
+    .snip1214 .featured {
+        margin-top: 0;
+    }
+}
+
+.plan {
+    margin: 0;
+    width: 25%;
+    position: relative;
+    float: left;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 3px 20px #ccc;
+}
+
+@media only screen and (max-width: 440px) {
+    .snip1214 .plan {
+        width: 100%;
+    }
+}
+
+.center {
+    margin: 0 auto !important;
+    /* display: block !important;*/
+}
+
+.info-div {
+    text-align: center;
+    color: black;
+    margin-top: 2.5%;
+}
+
+    .info-div p {
+        color: #dedede;
+    }
+
+.deblji-tekst {
+    font-weight: 800;
+    font-size: 25px;
+}
+
+.mainPricePlanDiv {
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 40px 10px;
+}
+
+.pricePlanDiv {
+    padding: 14px;
+    width: 100%;
+    /*  height: 320px;*/
+    height: 90%;
+    position: relative;
+    float: left;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.pricePlanContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    padding: 12px;
+    width: 40%;
+}
+
+.plan-select {
+    border-top: 1px solid #d2d7e2;
+    padding: 10px 10px 0;
+}
+
+.plan-select {
+    background-color: #222f3d;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+    font-weight: 800;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.snip1214 .plan-select:hover {
+    background-color: #46627f;
+}
+
+.plan-select {
+    border-top: 1px solid #d2d7e2;
+    padding: 10px 10px 0;
+}
+
+.plan-select {
+    background-color: #222f3d;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+    font-weight: 800;
+    text-transform: uppercase;
+    /*display: inline-block;*/
+}
+
+    .plan-select:hover {
+        background-color: #46627f;
+    }
+
+
+
+.planCanceled {
+    position: absolute;
+    left: -5px;
+    z-index: 500;
+    color: #8B0000;
+    font-size: 100px;
+    font-weight: 500;
+    opacity: 0.4;
+    top: 30%;
+    transform: rotate(-45deg);
+}
+
+
+.gumb_otkazi {
+    background-color: red;
+}
+
+.swal2-container {
+    z-index: 1600 !important;
+}
+
+
+/* API and Plans CSS change*/
+@media only screen and (max-width:1100px) {
+    .gumb_kreiraj_api {
+        height: 30% !important;
+    }
+
+
+
+    .apiTabs {
+        margin: 50px;
+        padding: 30px;
+        border: 1px solid #f1f1fe;
+        box-shadow: 0 3px 20px #ccc;
+        width: 80%;
+        display: inline-block;
+        position: center;
+    }
+
+    /*   #APImain {
+        height: calc(100%-40px);
+    }*/
+
+
+
+    #default-contained {
+        height: 30% !important;
+    }
+}
+
+@media only screen and (min-width:1100px) {
+    .gumb_kreiraj_api {
+        height: 30% !important;
+    }
+
+    .apiTabs {
+        margin: 50px;
+        padding: 30px;
+        border: 1px solid #f1f1fe;
+        box-shadow: 0 3px 20px #ccc;
+        width: 80%;
+        display: inline-block;
+    }
+
+
+    /*    #APImain {
+        height: calc(100%-40px) !important;
+    }*/
+
+
+    #APImainContent {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 95%;
+    }
+
+
+    #default-contained {
+        height: 30% !important;
+    }
+}
+
+@media only screen and (max-width:1700px) {
+
+    .pricePlanDiv {
+        height: 150%;
+        width: 100%;
+        margin: 10px;
+    }
+
+    .planCanceled {
+        font-size: 70px;
+        bottom: -20px;
+        left: 25%;
+    }
+}
+
+
+@media only screen and (max-width:1300px) {
+
+    .pricePlanDiv {
+        height: 150%;
+        width: 100%;
+        margin: 10px;
+    }
+
+    .planCanceled {
+        font-size: 70px;
+        bottom: -20px;
+        left: 25%;
+    }
+
+    .pricePlanContent {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 70%;
+        padding: 12px;
+        width: 80%;
+    }
+
+    #PlanHeaderMain {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0px;
+        padding-bottom: 0;
+        width: 110%;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        height: 70%;
+    }
+}
+
+
+@media only screen and (min-width:2000px) {
+
+
+    .planCanceled {
+        font-size: 90px;
+        bottom: -20px;
+        left: 24%;
+    }
+
+
+
+    #APIheader {
+        height: 15%;
+    }
+
+        #APIheader p {
+            font-size: 25px;
+        }
+
+    #APImain {
+        height: 82%
+    }
+
+    .gumb_kreiraj_api {
+        height: 30% !important;
+    }
+}
+
+@media only screen and (min-width:2560px) {
+
+    .planCanceled {
+        font-size: 90px;
+        bottom: -20px;
+        left: 140px;
+    }
+}
+
+#planDiv {
+    height: 100%;
+}
+
+
+
+@media only screen and (max-width:1500px) {
+
+    .planCanceled {
+        font-size: 90px;
+        bottom: -20px;
+        left: 20%;
+    }
+}
+
+
+
+
+@media only screen and (max-width:960px) {
+
+    .planCanceled {
+        font-size: 90px;
+        bottom: -20px;
+        left: 2%;
+    }
+}
+
+@media only screen and (min-width:1000px) {
+
+    .planCanceled {
+        font-size: 90px;
+        bottom: -20px;
+        left: 10%;
+    }
+}
+
+@media only screen and (min-width:2800px) {
+
+    .planCanceled {
+        font-size: 110px;
+        bottom: -20px;
+        left: 20%;
+    }
+}
+
+@media only screen and (min-width:1300px) {
+
+    .planCanceled {
+        font-size: 80px;
+        bottom: -20px;
+        left: 7%;
+    }
+}
+
+@media only screen and (min-width:1600px) {
+
+    .planCanceled {
+        font-size: 70px;
+        bottom: -20px;
+        left: 30%;
+    }
+}
+
+@media only screen and (min-width:2400px) {
+
+    .planCanceled {
+        font-size: 90px;
+        bottom: -20px;
+        left: 25%;
+    }
+}
+
+@media only screen and (min-width:850px) and (max-width:1000px) {
+
+    .planCanceled {
+        font-size: 70px;
+        bottom: -20px;
+        left: 20%;
+    }
+}
+
+#broj-racuna-poslovni-plan {
+    color: #dedede;
+}
