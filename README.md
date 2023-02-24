@@ -24,6 +24,15 @@ The app is used to monitor travel orders and many more.
 </ul>
 
 <h3>Mainly made using DevExtreme, jQuery and Ajax async calls </h3>
+  
+  When waiting for API result, there is always a loader for better User experience:
+  
+  <p align="center">
+<img src="https://github.com/Fr1k1/TravelOrderApp/blob/master/Aplikacija_izrada/TravelApp_screenshots/Loader.png" width=500>
+
+</p>
+  
+  
 
 <h3>Some parts of the app: <h3/>
 
