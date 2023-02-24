@@ -24,3 +24,20 @@ The app is used to monitor travel orders and many more.
 </ul>
 
 <h3>Mainly made using DevExtreme, jQuery and Ajax async calls </h3>
+
+<h3>Some parts of the app: <h3/>
+
+<img src="https://github.com/Fr1k1/TravelOrderApp/blob/master/Aplikacija_izrada/TravelApp_screenshots/Login_pic.png" width=1000>
+
+<img src="https://github.com/Fr1k1/TravelOrderApp/blob/master/Aplikacija_izrada/TravelApp_screenshots/Nadzorna.png" width=1000>
+
+<img src="https://github.com/Fr1k1/TravelOrderApp/blob/master/Aplikacija_izrada/TravelApp_screenshots/Business_plans.png" width=1000>
+
+<img src="https://github.com/Fr1k1/TravelOrderApp/blob/master/Aplikacija_izrada/TravelApp_screenshots/Popis_vozila.png" width=1000>
+
+<img src="https://github.com/Fr1k1/TravelOrderApp/blob/master/Aplikacija_izrada/TravelApp_screenshots/API_pic.png" width=1000>
+
+<p align="center">
+<img src="https://github.com/Fr1k1/TravelOrderApp/blob/master/Aplikacija_izrada/TravelApp_screenshots/Unos_korisnika.png" width=500>
+
+</p>
